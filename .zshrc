@@ -16,7 +16,7 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=1000
 export COLORTERM=truecolor
-export TERM=screen-256color
+export TERM=tmux-256color
 
 . "$HOME/.asdf/asdf.sh"
 
