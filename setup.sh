@@ -1,4 +1,5 @@
-sudo apt install git
+sudo apt install git tmux zsh
+sudo apt update
 
 # Install themes
 mkdir projects
@@ -22,5 +23,20 @@ cp ~/config-files/.tmux.conf ~/
 source ~/.zshrc
 source ~/.tmux.conf
 
+sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common vim-gtk3 curl -y
+sudo apt install postgresql-10 postgresql-contrib postgresql-server-dev-10 redis-server libhiredis-dev memcached libmemcached-dev -y
+
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSl https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt update && sudo apt-get install docker-ce -y
+
+sudo usermod -aG docker $USER
+
 asdf plugin add python
 asdf install python latest
+
+asdf plugin add nodejs
+asdf install nodejs latest
