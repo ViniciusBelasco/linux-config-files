@@ -61,7 +61,7 @@ sudo snap install nvim
 sudo apt-get install tree-sitter-cli -y
 
 # include rust binary
-asdf plugin-add https://github.com/asdf-community/asdf.rust.git
+asdf plugin-add https://github.com/asdf-community/asdf-rust
 asdf install rust latest
 asdf global rust latest
 
